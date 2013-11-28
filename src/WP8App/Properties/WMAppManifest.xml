@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="th-TH" />
+  <App xmlns="" ProductID="{1dbe211e-0fe9-40ff-ad9e-0841d3f5f839}" Title="อาหารประจําชาติอาเซียน " RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="" Description="ยินดีตอนรับ" Publisher="" PublisherID="{e7d94c95-4681-45a0-a8b4-5df4e482fb9e}">
+    <IconPath IsRelative="true" IsResource="false">Images\Logo-aa87c77c-d4e9-4a1d-82d9-d75b739152cb.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING"/>
+      <Capability Name="ID_CAP_SENSORS"/>
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
+      <Capability Name="ID_CAP_SPEECH_RECOGNITION" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_PROXIMITY" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_MAP" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="View/navigate_Menu.xaml" ActivationPolicy="Resume"/>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="MyDoWapp" TaskName="_default">
+		<TemplateIconic>
+		  <SmallImageURI IsRelative="true" IsResource="false">Images/Logo-aa87c77c-d4e9-4a1d-82d9-d75b739152cb.png</SmallImageURI>
+		  <Count>0</Count>
+		  <IconImageURI IsRelative="true" IsResource="false">Images/Logo-aa87c77c-d4e9-4a1d-82d9-d75b739152cb.png</IconImageURI>
+		  <Title>อาหารประจําชาติอาเซียน </Title>
+		  <Message></Message>
+		  <BackgroundColor></BackgroundColor>
+		  <HasLarge>True</HasLarge>
+		  <LargeContent1></LargeContent1>
+		  <LargeContent2></LargeContent2>
+		  <LargeContent3></LargeContent3>
+		  <DeviceLockImageURI IsRelative="true" IsResource="false">
+		  </DeviceLockImageURI>
+		</TemplateIconic>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <Extension ExtensionName="LockScreen_Notification_IconCount" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Notification_TextField" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Background" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+    </Extensions>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
